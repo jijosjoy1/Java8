@@ -1,0 +1,22 @@
+package asds;
+
+import java.util.Optional;
+
+public class OptionalDemo {
+	
+	public static void main(String args[])
+	{
+		Optional<String>teach=Optional.of("");
+		String TEACH_PEAOPLE=teach.map(String::toUpperCase).orElse(null);
+		System.out.println(TEACH_PEAOPLE);
+		
+		Optional<String> optional = Optional.of("Hello, World!");
+		if (optional.isPresent()) {
+		    String value = optional.get();
+		    System.out.println(value); // Output: Hello, World!
+		}
+
+		
+	}
+
+}
